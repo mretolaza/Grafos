@@ -30,6 +30,7 @@ public class MapGenerate {
 			String II ="II";
 			String F = "F";
 			String E = "E";
+			String K = "K";
 			
 			//Nodos
 			
@@ -43,10 +44,10 @@ public class MapGenerate {
 			punt.addVertex(II);
 			punt.addVertex(E); 
 			punt.addVertex(F); 
-			
+			punt.addVertex(K); 
 		// Agregar conexiones 
 			
-			punt.addEdge(A, II); 
+			punt.addEdge(A, II);
 			punt.addEdge(A, F);
 			punt.addEdge(F, G); 
 			punt.addEdge(G, H); 
@@ -57,6 +58,10 @@ public class MapGenerate {
 			punt.addEdge(B, C);
 			punt.addEdge(E, C);
 			punt.addEdge(F, C); 
+			punt.addEdge(K, J); 
+			punt.addEdge(K, H);
+			punt.addEdge(K, G);
+			punt.addEdge(K, A); 
 			
 			punt.addEdge(II, A); 
 			punt.addEdge(F, A);
@@ -69,6 +74,10 @@ public class MapGenerate {
 			punt.addEdge(C, B);
 			punt.addEdge(C, E);
 			punt.addEdge(C, F); 
+			punt.addEdge(J, K); 
+			punt.addEdge(H, K);
+			punt.addEdge(G, K);
+			punt.addEdge(A, K); 
 			
 		 
 		 } catch (Exception e){
